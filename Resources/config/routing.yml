@@ -1,0 +1,4 @@
+interactive:
+    resource: "@GoleadsitFileManagerBundle/Controller"
+    type:     annotation
+    prefix:   /file_manager

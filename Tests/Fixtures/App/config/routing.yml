@@ -1,0 +1,4 @@
+goleadsit_file_manager:
+    resource: "@GoleaditFileManagerBundle/Controller"
+    type:     annotation
+    prefix:   /manager/

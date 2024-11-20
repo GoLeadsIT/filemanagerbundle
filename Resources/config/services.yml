@@ -1,0 +1,19 @@
+services:
+    file_type_extension:
+        class: Goleadsit\FileManagerBundle\Twig\FileTypeExtension
+        tags:
+            - { name: twig.extension }
+        arguments: ['@file_type_service']
+        public: true
+
+    file_type_service:
+        class: Goleadsit\FileManagerBundle\Service\FileTypeService
+        arguments: ['@router', '@assets.packages']
+        public: true
+
+    order_extension:
+        class: Goleadsit\FileManagerBundle\Twig\OrderExtension
+        tags:
+            - { name: twig.extension }
+        arguments: ['@router']
+        public: true
